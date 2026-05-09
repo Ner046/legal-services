@@ -5,3 +5,57 @@ body{
  font-family: "Geist", sans-serif;
  font-size: 18px;
 }
+
+    @utility hero-display{
+        @apply text-[32px] md:text-[72px] xl:text-[120px] leading-[0.95] tracking-[-0.03em];
+    }
+
+    @utility display-1{
+        @apply text-[100px] md:text-[200px] xl:text-[300px] leading-[1.09] tracking-[-0.05em];
+    }
+
+    @utility display-2{
+        @apply text-[84px] xl:text-[120px] leading-[0.95] tracking-[-0.03em];
+    }
+
+    @utility display-3{
+        @apply text-[36px] md:text-[64px] xl:text-[76px] leading-[0.95] tracking-[-0.06em];
+    }
+
+    @utility header-1{
+        @apply text-[22px] md:text-[32px] leading-[1.09] tracking-[-0.05em];
+    }
+
+    @utility header-2{
+        @apply text-[20px] md:text-[20px] xl:text-[24px] leading-[1.09] tracking-[-0.05em];
+    }
+
+    
+    @utility header-3{
+        @apply text-[18px] leading-[1.35] tracking-[-0.02em];
+    }
+
+    @utility paragraph-1{
+        @apply text-[22px] md:text-[32px] leading-[1.09] tracking-[-0.05em];
+    }
+    
+    @utility paragraph-2{
+        @apply text-[18px] leading-[1.35] tracking-[-0.02em];
+    }
+
+    @utility paragraph-3{
+        @apply text-[14px] leading-[1.40] tracking-[0em];
+    }
+
+    
+    @utility text-button{
+        @apply text-[18px] leading-[1.2] tracking-[-0.02em];
+
+    }
+
+    @utility text-link{
+        @apply text-[14px] leading-[1.4] tracking-[0.0em];
+
+    }
+
+
