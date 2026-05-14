@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    <script src ="script.js" defer></script>
   </head>
   <body>
 
@@ -76,6 +76,8 @@
     <div class="flex flex-col xl:flex-row gap-20  ">
     
     <h2 class="header-1">What We Offer</h2>
+
+    <div>
     <ul class="display-3">
       <li>Business Formation</li>
       <li>Contact Drafting</li>
@@ -86,9 +88,14 @@
       <li>Shareholder Disputes</li>
       <li class="text-[#FFF0C4]">+More</li>
     </ul>
+
+      <a href="#" class="text-button px-6 py-4.5 mt-16 bg-white rounded-full text-black inline-flex">Services</a>
+
+    </div>
+    
     </div>
 
-    <a href="#" class=" text-button px-6 py-4.5 mt-16 bg-white rounded-full text-black inline-flex">Services</a>
+    
   </div>
 
    </section>
@@ -102,36 +109,60 @@
           <p class="paragraph-2 max-w-79.75 xl:max-w-[40ch] md:max-w-[55ch]">We believe that our clients' experiences speak volumes about the quality of our legal services. Here's what some of them have to say:</p>
         </div>
 
-        <div class="header-1 bg-[#f6f6f6] max-w-184.5 min-h-108.75 px-12.5 py-7.5">
+        <div class="header-1 bg-[#f6f6f6] max-w-184.5  px-12.5 py-7.5">
 
-          <div class="flex flex-col gap-8">
+         
 
-        <blockquote>
+        <div id="quote-slider" aria-live ="polite" aria-atomic="true" class="min-h-100">
+
+        <blockquote class=" flex flex-col gap-8 font-medium" data-quote="1">
           <p>"Jones & Brown Legal handled my estate planning with such care and professionalism. They listened to my concerns and made the process clear and straightforward. I now have complete peace of mind knowing my family's future is secure." </p>
+          <cite class="not-italic">— David L., Business Owner</cite>
         </blockquote>
 
-        <p>— David L., Business Owner</p>
+          <blockquote class=" flex flex-col gap-8 font-medium" data-quote="2" >
+          <p>"Their expertise and courtroom presence were truly impressive. They turned a stressful situation into a successful outcome."</p>
+          <cite class="not-italic">— Sarah M., Small Business Owner</cite>
+
+        </blockquote>
+
+          <blockquote class="flex-col gap-8 font-medium" data-quote="3">
+
+          <p>"I was very impressed with the responsiveness and knowledge of everyone at Jones & Brown Legal. I felt like they really cared about my case, and they fought hard to get me a great result."</p>
+          <cite class="not-italic">— Thomas P., Individual Client</cite>
+          
+        </blockquote>
+
+        
+          <blockquote class="flex flex-col gap-8 font-medium" data-quote="4">
+
+          <p>"Their attention to detail and proactive communication made the entire process smooth and stress-free. I felt completely supported every step of the way."</p>
+          <cite class="not-italic">— Robert P., Real Estate Investor</cite>
+          
+        </blockquote>
+
 
         </div>
 
-    
-        <div class="flex gap-5 justify-center items-center mt-20">
+        <div class="flex gap-5 justify-center items-center">
 
-          <img src="assets/symbols/left-arrow.svg">
+          <button class="cursor-pointer" aria-label="Previous" data-arrow="prev"><img src="assets/symbols/left-arrow.svg" alt="" aria-hidden="true"></button>
           
           <div class="flex gap-2">
 
-            <span class="h-3 w-3 bg-gray-200 rounded-full "></span>
-            <span class="h-3 w-3 bg-gray-200 rounded-full"></span>
-            <span class="h-3 w-3 bg-gray-200 rounded-full"></span>
-            <span class="h-3 w-3 bg-gray-200 rounded-full"></span>
+            <button class="h-3 w-3 bg-gray-200 rounded-full cursor-pointer" data-circle="0" aria-label="Go to slide 1" aria-current="true"></button>
+            <button class="h-3 w-3 bg-gray-200 rounded-full cursor-pointer" data-circle="1" aria-label="Go to slide 2"></button>
+            <button class="h-3 w-3 bg-gray-200 rounded-full cursor-pointer" data-circle="2" aria-label="Go to slide 3"></button>
+            <button class="h-3 w-3 bg-gray-200 rounded-full cursor-pointer" data-circle="3" aria-label="Go to slide 4"></button>
 
           </div>
 
-          <img src="assets/symbols/right-arrow.svg">
+          <button class="cursor-pointer" aria-label="Next" data-arrow="next"><img src="assets/symbols/right-arrow.svg" alt="" aria-hidden="true"></button>
 
 
         </div>
+
+       
 
          </div>
 
@@ -201,5 +232,3 @@
   </body>
 
 </html>
-
-

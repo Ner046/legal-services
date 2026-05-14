@@ -58,4 +58,14 @@ body{
 
     }
 
+    [data-quote]{
+        display: none;
+    }
+    
+    [data-quote].active{
+        display: block;
+    }
 
+    [data-circle].active{
+        background-color: black;
+    }
