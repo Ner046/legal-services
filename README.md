@@ -2,7 +2,7 @@
 Website created by following a figma design, the technologies that were used are html / tailwind css / js. Website used semantic html and responsive css at 3 different sizes. JS was used to create testimonal slider with the use of data attributes for JS
 
 ## Live Demo
-[View Live Demo] ()
+[View Live Demo] (https://ner046.github.io/legal-services/)
 
 ## Screenshots
 - Desktop Design
